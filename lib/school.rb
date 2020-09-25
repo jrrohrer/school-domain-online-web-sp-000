@@ -1,7 +1,7 @@
 class School
   #readers for the instance variables in the initialize method
   attr_reader :name, :roster
-  
+
   #intitializes each instance of school with a name and creates an empty roster hash for it.
   def initialize(name)
     @name = name
