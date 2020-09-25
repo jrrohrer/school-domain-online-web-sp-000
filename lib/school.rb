@@ -26,4 +26,10 @@ class School
     #@roster[grade] #uses the instance variable, lowest level way to expose the data
     self.roster[grade] #this is using the roster getter method, which is useful if you want to change the way the data is displayed. Most flexible of the two options.
   end
+
+  def sort
+    self.roster.each do |grade, students|
+      students.sort!
+    end
+  end
 end
