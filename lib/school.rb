@@ -23,6 +23,7 @@ class School
   end
 
   def grade(grade)
-    @roster[grade]
+    #@roster[grade] #uses the instance variable, lowest level way to expose the data
+    self.roster[grade] #this is using the roster getter method, which is useful if you want to change the way the data is displayed. Most flexible of the two options.
   end
 end
